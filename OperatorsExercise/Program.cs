@@ -36,7 +36,7 @@ namespace OperatorsExercise
         
         public static double AreaOfCircle(double r)
         {
-            return (3.14 * (r*r));
+            return (Math.PI * (Math.Pow(r, 2)));
         }
         
     }
