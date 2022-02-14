@@ -6,15 +6,28 @@ namespace OperatorsExercise
     {
         static void Main(string[] args)
         {
-            int a = 17;
-            int b = 4;
-            int quotient = a / b;
-            int remainder = a % b;
+            double a;
+            double b;
+            double r;
             
 
+            Console.Write("What is the first number?: ");
+            a = double.Parse(Console.ReadLine());
+            Console.Write("What is the second number?: ");
+            b = double.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            double quotient = a / b;
+            double remainder = a % b;
+
+            Console.WriteLine($"{a} multiplied by {b} equals {a * b}");
+            Console.WriteLine($"{a} added to {b} equals {a + b}");
+            Console.WriteLine($"{a} subtracted by {b} equals {a - b}");
             Console.WriteLine($"{a} divided by {b} is {quotient} and the remainder is {remainder}");
+            Console.WriteLine();
+
             Console.Write("What is the radius of your circle?: ");
-            double r = double.Parse(Console.ReadLine());
+            r = double.Parse(Console.ReadLine());
             Console.Write($"The area of a circle with the radius of {r} is {AreaOfCircle(r)}");
             Console.WriteLine();
                 
